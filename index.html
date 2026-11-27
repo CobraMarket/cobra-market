@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COBRA MARKET — Telegram NFT Gifts</title>
+<style>
+:root{--bg:#0b0c0d;--panel:#141619;--panel2:#1b1e22;--line:#2a2e33;--text:#f4f4f1;--muted:#9ba1a8;--gold:#d8ad55;--gold2:#f1d18b;--green:#72c69a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#292116 0,transparent 38%),var(--bg);color:var(--text);font:15px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{max-width:1200px;margin:auto;padding:0 22px}
+header{height:76px;border-bottom:1px solid #25282b;background:#0d0e0fdd;backdrop-filter:blur(12px);position:sticky;top:0;z-index:5}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:2px}.mark{width:38px;height:38px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:21px}.brand span:last-child{color:var(--gold)}.links{display:flex;gap:24px;color:#c4c7ca}.links a:hover{color:var(--gold)}.navright{display:flex;align-items:center;gap:12px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 13px;color:#cdd1d4;font-size:13px}.online{color:var(--green)}
+.hero{padding:55px 0 28px;display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:center}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.02;letter-spacing:-2px;margin:12px 0 16px}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{color:var(--muted);max-width:590px;margin:0 0 24px}.cta{display:inline-flex;background:var(--gold);color:#15120b;font-weight:800;padding:12px 19px;border-radius:11px}.hero-art{min-height:230px;border:1px solid #4a3b20;border-radius:24px;background:linear-gradient(140deg,#302719,#161819 60%,#222018);display:grid;place-items:center;position:relative;overflow:hidden}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #9d793d55;border-radius:50%;width:260px;height:260px}.hero-art:after{width:190px;height:190px}.cobra{font-size:104px;filter:drop-shadow(0 10px 24px #000);z-index:1}.hero-tag{position:absolute;bottom:16px;right:18px;color:var(--gold2);font-size:11px;letter-spacing:2px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0 44px}.step{border:1px solid var(--line);background:#121416;border-radius:14px;padding:16px;display:flex;gap:12px;align-items:center}.step b{color:var(--gold);font-size:19px}.step small{display:block;color:var(--muted)}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:0 0 18px}.section-head h2{font-size:26px;margin:0;letter-spacing:-.5px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.catalog{display:grid;grid-template-columns:250px 1fr;gap:18px;margin-bottom:70px}.filters,.toolbar,.product{background:var(--panel);border:1px solid var(--line);border-radius:16px}.filters{padding:18px;height:max-content}.filters h3{margin:0 0 16px;font-size:16px}.field{margin:0 0 15px}.field label{display:block;color:#b7bdc3;font-size:12px;margin-bottom:7px}.field input,.field select,.search{width:100%;background:#0e1012;border:1px solid #30353a;color:var(--text);border-radius:9px;padding:10px 11px;outline:none}.field input:focus,.field select:focus,.search:focus{border-color:var(--gold)}.range{display:grid;grid-template-columns:1fr 1fr;gap:8px}.filter-actions{display:flex;gap:8px;margin-top:18px}.btn{border:1px solid var(--line);background:#22262a;color:var(--text);padding:9px 12px;border-radius:9px;cursor:pointer}.btn.primary{background:var(--gold);border-color:var(--gold);color:#17130b;font-weight:800}.btn:hover{filter:brightness(1.12)}
+.results{min-width:0}.toolbar{padding:13px;display:flex;gap:10px;align-items:center;margin-bottom:14px}.search{flex:1}.sort{background:#0e1012;border:1px solid #30353a;color:#d9dcdf;border-radius:9px;padding:10px;max-width:220px}.count{font-size:12px;color:var(--muted);white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.product{overflow:hidden;transition:.18s}.product:hover{transform:translateY(-3px);border-color:#806632}.art{height:170px;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 50% 40%,#65502c,#252018 55%,#151719)}.art.blue{background:radial-gradient(circle at 50% 40%,#3a5369,#1b2832 58%,#131719)}.art.pink{background:radial-gradient(circle at 50% 40%,#734454,#33202c 58%,#151719)}.art .emoji{font-size:70px;filter:drop-shadow(0 8px 15px #0008)}.num{position:absolute;top:10px;left:10px;background:#090a0bbb;border:1px solid #ffffff20;border-radius:7px;padding:4px 7px;font-size:10px;color:#ddd}.heart{position:absolute;right:10px;top:9px;border:0;background:#090a0bbb;color:white;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:16px}.heart.active{color:#ff7b89}.details{padding:13px}.details h3{margin:0 0 4px;font-size:15px}.sub{color:var(--muted);font-size:11px}.meta{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.tag{font-size:10px;color:#d8c08c;background:#30291d;border:1px solid #4c3c22;padding:4px 7px;border-radius:6px}.buyrow{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px;margin-top:10px}.price{font-weight:850;color:var(--gold2)}.buy{background:#28251e;border:1px solid #5a4828;color:var(--gold2);border-radius:8px;padding:7px 10px;cursor:pointer;font-size:12px}.empty{display:none;text-align:center;padding:50px 15px;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
+footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.modal{display:none;position:fixed;inset:0;background:#000b;z-index:10;place-items:center;padding:20px}.modal.show{display:grid}.dialog{width:min(440px,100%);background:#171a1d;border:1px solid #49402e;border-radius:18px;padding:23px}.dialog h3{margin:0 0 8px}.dialog p{color:var(--muted);font-size:13px}.close{float:right;background:none;border:0;color:#ddd;font-size:22px;cursor:pointer}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.hero-art{min-height:180px}.catalog{grid-template-columns:1fr}.filters{display:grid;grid-template-columns:repeat(2,1fr);gap:0 12px}.filters h3,.filter-actions{grid-column:1/-1}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.links{gap:12px}}
+@media(max-width:560px){.wrap{padding:0 14px}.links{display:none}.hero{padding-top:35px}.steps{grid-template-columns:1fr}.filters{grid-template-columns:1fr}.toolbar{flex-wrap:wrap}.search{flex-basis:100%}.sort{max-width:none;flex:1}.grid{gap:9px}.art{height:135px}.art .emoji{font-size:58px}.details{padding:10px}.details h3{font-size:13px}.price{font-size:13px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#"><span class="mark">♛</span><span>COBRA <span>MARKET</span></span></a>
+  <nav class="links"><a href="#catalog">Подарки</a><a href="#how">Как купить</a><a href="#contacts">Контакты</a></nav>
+  <div class="navright"><span class="pill"><span class="online">●</span> Магазин открыт</span></div>
+</div></header>
+<main class="wrap">
+<section class="hero">
+ <div><div class="eyebrow">Telegram collectible gifts</div><h1>Найди свой<br><em>NFT-подарок</em></h1><p>Коллекционные подарки Telegram в одном каталоге. Изучай характеристики, сравнивай предложения и выбирай понравившийся вариант.</p><a class="cta" href="#catalog">Перейти в каталог&nbsp; →</a></div>
+ <div class="hero-art"><div class="cobra">🐍</div><div class="hero-tag">COBRA MARKET · EST. 2026</div></div>
+</section>
+<section class="steps" id="how">
+ <div class="step"><b>01</b><div><strong>Выбери подарок</strong><small>Найди нужную коллекцию</small></div></div>
+ <div class="step"><b>02</b><div><strong>Уточни заказ</strong><small>Свяжись с продавцом</small></div></div>
+ <div class="step"><b>03</b><div><strong>Получи подарок</strong><small>Проверь перевод в Telegram</small></div></div>
+</section>
+<section id="catalog">
+ <div class="section-head"><div><div class="eyebrow">Витрина</div><h2>Каталог подарков</h2><p>Демонстрационные позиции — замени их своими товарами перед публикацией.</p></div></div>
+ <div class="catalog">
+  <aside class="filters">
+   <h3>Фильтры</h3>
+   <div class="field"><label for="collection">Коллекция</label><select id="collection"><option value="">Все коллекции</option><option>Chill Flame</option><option>Peacock</option><option>Plush Pepe</option></select></div>
+   <div class="field"><label for="model">Модель</label><input id="model" placeholder="Например, Lava lamp"></div>
+   <div class="field"><label for="background">Фон</label><select id="background"><option value="">Любой фон</option><option>Gold</option><option>Blue</option><option>Pink</option></select></div>
+   <div class="field"><label for="pattern">Узор</label><select id="pattern"><option value="">Любой узор</option><option>Classic</option><option>Bon</option><option>Rare</option></select></div>
+   <div class="field"><label>Цена, ₽</label><div class="range"><input id="minPrice" type="number" min="0" placeholder="От"><input id="maxPrice" type="number" min="0" placeholder="До"></div></div>
+   <div class="filter-actions"><button class="btn primary" id="apply">Применить</button><button class="btn" id="reset">Сбросить</button></div>
+  </aside>
+  <div class="results">
+   <div class="toolbar"><input class="search" id="search" placeholder="Поиск по коллекции, модели или номеру…"><select class="sort" id="sort"><option value="default">Сначала популярные</option><option value="low">Цена: сначала дешевле</option><option value="high">Цена: сначала дороже</option><option value="number">Номер: по возрастанию</option></select><span class="count" id="count"></span></div>
+   <div class="grid" id="grid"></div><div class="empty" id="empty">По этим фильтрам ничего не найдено. Попробуй изменить запрос.</div>
+  </div>
+ </div>
+</section>
+</main>
+<footer id="contacts"><div class="wrap foot"><div><strong style="color:#d8ad55;letter-spacing:1px">COBRA MARKET</strong><div>Демонстрационный магазин Telegram NFT</div></div><div>Связь с продавцом: <a href="#" id="telegramLink" style="color:#e5c77f">добавь ссылку на свой Telegram</a></div><div>© 2026 COBRA MARKET</div></div></footer>
+<div class="modal" id="modal"><div class="dialog"><button class="close" id="close">×</button><div class="eyebrow">Запрос на покупку</div><h3 id="modalTitle">Название товара</h3><p id="modalText">Это демонстрационная витрина. Перед запуском укажи действующий контакт продавца и согласуй способ передачи подарка.</p><button class="btn primary" id="modalOk">Понятно</button></div></div>
+<script>
+const products=[
+ {id:1,name:"Chill Flame #48,927",collection:"Chill Flame",model:"Lava lamp",number:48927,price:1126,bg:"Gold",pattern:"Classic",emoji:"🪔",tone:""},
+ {id:2,name:"Inflatable Peacock #12,604",collection:"Peacock",model:"RALP",number:12604,price:890,bg:"Blue",pattern:"Bon",emoji:"🦚",tone:"blue"},
+ {id:3,name:"Plush Pepe #7,318",collection:"Plush Pepe",model:"Classic",number:7318,price:2450,bg:"Pink",pattern:"Rare",emoji:"🐸",tone:"pink"},
+ {id:4,name:"Chill Flame #52,110",collection:"Chill Flame",model:"Lava lamp",number:52110,price:1390,bg:"Blue",pattern:"Rare",emoji:"🪔",tone:"blue"},
+ {id:5,name:"Inflatable Peacock #8,204",collection:"Peacock",model:"RALP",number:8204,price:1050,bg:"Gold",pattern:"Bon",emoji:"🦚",tone:""},
+ {id:6,name:"Plush Pepe #9,901",collection:"Plush Pepe",model:"Classic",number:9901,price:2190,bg:"Pink",pattern:"Classic",emoji:"🐸",tone:"pink"}
+];
+const $=id=>document.getElementById(id);let favorites=new Set();
+function render(){
+ let q=$("search").value.trim().toLowerCase(), c=$("collection").value,m=$("model").value.trim().toLowerCase(),b=$("background").value,p=$("pattern").value,min=+$("minPrice").value||0,max=$("maxPrice").value?+$("maxPrice").value:Infinity;
+ let arr=products.filter(x=>(!q||`${x.name} ${x.collection} ${x.model} ${x.number}`.toLowerCase().includes(q))&&(!c||x.collection===c)&&(!m||x.model.toLowerCase().includes(m))&&(!b||x.bg===b)&&(!p||x.pattern===p)&&x.price>=min&&x.price<=max);
+ let s=$("sort").value;if(s==="low")arr.sort((a,b)=>a.price-b.price);if(s==="high")arr.sort((a,b)=>b.price-a.price);if(s==="number")arr.sort((a,b)=>a.number-b.number);
+ $("count").textContent=arr.length+" товара";
+ $("grid").innerHTML=arr.map(x=>`<article class="product"><div class="art ${x.tone}"><span class="num">#${x.number.toLocaleString("ru-RU")}</span><span class="emoji">${x.emoji}</span><button class="heart ${favorites.has(x.id)?"active":""}" data-fav="${x.id}" aria-label="В избранное">${favorites.has(x.id)?"♥":"♡"}</button></div><div class="details"><h3>${x.name}</h3><div class="sub">${x.collection} · ${x.model}</div><div class="meta"><span class="tag">${x.bg}</span><span class="tag">${x.pattern}</span></div><div class="buyrow"><span class="price">${x.price.toLocaleString("ru-RU")} ₽</span><button class="buy" data-buy="${x.id}">Подробнее</button></div></div></article>`).join("");
+ $("empty").style.display=arr.length?"none":"block";
+}
+["search","sort"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
+$("apply").onclick=render;
+$("reset").onclick=()=>{["collection","model","background","pattern","minPrice","maxPrice","search"].forEach(id=>$(id).value="");$("sort").value="default";render()};
+$("grid").addEventListener("click",e=>{let f=e.target.dataset.fav;if(f){let id=+f;favorites.has(id)?favorites.delete(id):favorites.add(id);render()}let b=e.target.dataset.buy;if(b){let x=products.find(p=>p.id===+b);$("modalTitle").textContent=x.name+" — "+x.price.toLocaleString("ru-RU")+" ₽";$("modal").classList.add("show")}});
+$("close").onclick=$("modalOk").onclick=()=>$("modal").classList.remove("show");
+$("modal").addEventListener("click",e=>{if(e.target===$("modal"))$("modal").classList.remove("show")});
+render();
+</script>
+</body></html>
